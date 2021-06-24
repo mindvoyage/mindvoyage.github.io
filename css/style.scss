@@ -1,0 +1,174 @@
+$blue: darken(#0074d9, 10%);
+$ocean: darken($blue, 1%);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #bcd6fb;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Roboto",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  background-color: $ocean;
+  // overflow: hidden;
+  padding: 20px;
+  // flex-grow: 1;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  &:hover {
+    color: darken(white, 20%);
+  }
+  img {
+    width: 105px;
+    height: auto;
+    float: left;
+  }
+}
+
+.topnav a.active {
+  color: $blue;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav-right a {
+  float: right;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  font-family: inherit;
+  padding: 15px;
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+ul li {
+  display: inline;
+  padding: 50px;
+  margin: 50px;
+  font-size: 4em;
+}
+
+h1,
+h2,
+ul li {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: inherit;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  a {
+    color: inherit;
+  }
+  text-shadow: -4px 4px #ef3550, -8px 8px #f48fb1, -12px 12px #7e57c2,
+    -16px 16px #2196f3, -20px 20px #26c6da, -24px 24px #43a047,
+    -28px 28px #eeff41, -32px 32px #f9a825, -36px 36px #ff5722;
+}
+
+.block {
+  padding: 50px;
+  font-size: 0.8em;
+  display: inline;
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+}
+
+p {
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  line-height: 30px;
+  display: block;
+  padding: 40px;
+  background-color: $ocean;
+  text-align: center;
+  flex-shrink: 0;
+  color: darken(white, 10%);
+  a {
+    color: inherit;
+  }
+  #socials a {
+    margin: 12px;
+    &:hover {
+      color: darken(white, 20%);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  ul li {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  ul li {
+    font-size: 2em;
+    margin: 25px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .topnav {
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    // text-shadow: none;
+  }
+  h2 {
+    font-size: 1em;
+    // text-shadow: none;
+  }
+  ul li {
+    // text-shadow: none;
+    font-size: 1em;
+    margin: 25px;
+    padding: 0;
+  }
+}
